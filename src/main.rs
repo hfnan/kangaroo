@@ -1,7 +1,7 @@
 mod circulate;
 mod compiler;
 use circulate::{repl, script};
-use std::{env, process};
+use std::env;
 
 fn main() {
     let args: Vec<String> = env::args().collect();

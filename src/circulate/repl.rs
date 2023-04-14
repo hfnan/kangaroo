@@ -1,5 +1,5 @@
 use crate::compiler::producer;
-use std::io::{self, Read, Write};
+use std::io::{self, Write};
 
 pub fn run() {
     println!("Kangaroo v0.0.1");
@@ -14,6 +14,7 @@ pub fn run() {
         io::stdin().read_line(&mut sentence).unwrap();
 
         // println!("{}", sentence);
+        sentence.push(';');
         producer::run(sentence);
     }
 }

@@ -1,0 +1,5 @@
+#five = 5
+#ten = 10
+#eleven = ten + 1
+#add_one(x) = x + 1
+#twenty = ten * 10

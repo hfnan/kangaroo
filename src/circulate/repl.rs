@@ -1,19 +1,19 @@
-use std::io::{self, Write};
 use crate::compiler::producer;
+use std::io::{self, Read, Write};
 
 pub fn run() {
     println!("Kangaroo v0.0.1");
     println!("Welcome!");
-    
-    let mut cnt = 0;
+
     loop {
-        print!("$[{cnt}] ");
-        io::stdout().flush().expect("Cannot flush output!");
-        cnt += 1;
+        let mut sentence = String::new();
+        
+        print!(">>> ");
+        io::stdout().flush().unwrap();
 
-        let mut line = String::new();
-        io::stdin().read_line(&mut line).expect("Cannot read from command!");        
+        io::stdin().read_line(&mut sentence).unwrap();
 
-        producer::run(line);        
+        // println!("{}", sentence);
+        producer::run(sentence);
     }
 }

@@ -1,6 +1,7 @@
-#pi = 3.14159
-#calc(r) = pi * r * r
-#square = x: x * x
-
-// name
-# good choice ! // not very good
+#five = 5
+#ten = 10
+ten = ten + 5
+#add_one(x) = x + 1
+#eleven = add_one(ten)
+$eleven
+3 + (ten - five) * 2 

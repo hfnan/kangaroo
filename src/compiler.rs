@@ -1,3 +1,3 @@
 mod toucher;
 pub mod producer;
-mod parser;
+pub mod parser;

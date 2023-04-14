@@ -1,5 +1,6 @@
 mod circulate;
 mod compiler;
+mod ast;
 use circulate::{repl, script};
 use std::env;
 

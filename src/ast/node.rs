@@ -36,7 +36,6 @@ impl Display for Block {
 }
 
 pub struct Band {
-
     pub hash_sign: Token,
     pub name: Identifier,
     pub args: Vec<Identifier>,
@@ -76,7 +75,10 @@ impl Display for Identifier {
     }
 }
 
-pub struct Expression {}
+pub struct Expression {
+    // operator: Token,
+    // expression: Box<dyn Expr>
+}
 
 impl Display for Expression {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
